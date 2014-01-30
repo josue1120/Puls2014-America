@@ -5,10 +5,8 @@
 		<meta name="description" content="Proyecto de la primera generación del 2014 del curso de diseño web online" />
 		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 		<title>Puls2014: Comunidad de personas atractivas y sexy</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/estilos.css" />
-		<script src="js/prefixfree.js"></script>
 	</head>
 	<body>
 		<header>
@@ -27,14 +25,20 @@
 				<li><a href="#">Javascript</a></li>
 				<li><a href="#">CSS3</a></li>
 				<li><a href="#">Django</a></li>
-				<li id="publicar_nav"><a href="#" class="icon-lapiz">Publicar</a></li>
+				<li id="publicar_nav"><a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a></li>
 			</ul>
 		</nav>
+		<form action="" id="formulario" class="formulario">
+			<input type="text" id="titulo" placeholder="Titulo" required>
+			<input type="url" id="url" placeholder="Link" required>
+			<input type="submit" value="Agregar">
+		</form>
 	<!--
 		<aside>
 			<video width="320" height="240" controls>
-				<source src="movie.mp4" type="video/mp4"></source>
-				<source src="movie.ogg" type="video/mp4"></source>
+				<source src="videos/lecturas.m4v" type="video/m4v"></source>
+				<source src="videos/lecturas.ogg" type="video/ogg"></source>
+				<source src="videos/lecturas.webm" type="video/webm"></source>
 				Actualizate
 			</video>
 		</aside>
@@ -165,5 +169,16 @@
 			<p><strong>Powered by @JosueDanielBust</strong></p>
 			<p>Prog&Art 2014</p>
 		</footer>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/prefixfree.js"></script>
+		<script src="js/main.js"></script>
 	</body>
+	<script>
+		window.onload = function() {
+			console.log('OnLoad ready');
+		};
+		$(function() {
+			console.log('DOMContent ready');
+		});
+	</script>
 </html>

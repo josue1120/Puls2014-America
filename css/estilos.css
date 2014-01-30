@@ -10,6 +10,7 @@
     font-style: normal;
 }
 */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 @font-face {
 	font-family: 'puls2014';
@@ -208,7 +209,7 @@ nav ul #publicar_nav a:hover {
 	font-size: 1.2em;
 	font-style: italic;
 	margin-bottom: 0;
-	padding: 1em 1em 0 0;
+	padding: 0 1em 0 0;
 }
 #contenido .item .titulo_item a {
 	color: #444;
@@ -242,6 +243,28 @@ nav ul #publicar_nav a:hover {
 	color: #22bc68;
 }
 
+#contenido .item .votacion .comentarios_item {
+	background: #878787;
+	border-radius: 10%;
+	color: white;
+	margin: 0 0 0 .5em;
+	position: relative;
+	text-align: center;
+	width: 2.5em;
+}
+
+#contenido .item .votacion .comentarios_item:after {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid #878787;
+	content: "";
+	left: 13px;
+	position: absolute;
+	top: 100%;
+}
+
+
+
 /* Media Query */
 @media screen and (min-width: 800px){
 	#contenido {
@@ -268,4 +291,23 @@ nav ul #publicar_nav a:hover {
 	aside video	{
 		width: 100%;
 	}
+}
+
+.formulario {
+	padding: 1em;
+	text-align: center;
+	display: none;
+}
+.formulario input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"] {
+	background: #22BCE0;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	color: #ffffff;
 }
